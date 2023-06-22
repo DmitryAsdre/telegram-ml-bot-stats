@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'tg_bot_ml',
   packages = ['tg_bot_ml'],
-  version = '0.0.5',
+  version = '0.0.8',
   license='GPLv3',
   description = 'Simple telegram bot for logging ML statistics.',
   author = 'Dmitry',

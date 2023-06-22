@@ -39,8 +39,8 @@ class TGImgSummaryWriter(TGSummaryWriterBase):
             cur_metric_stats['mean'] = np.mean(metrics_data[0])
             cur_metric_stats['max'] = np.max(metrics_data[0])
             cur_metric_stats['min'] = np.min(metrics_data[0])
-            cur_metric_stats['argmax'] = metrics_data[0][np.argmax(metrics_data[0])]
-            cur_metric_stats['argmin'] = metrics_data[0][np.argmin(metrics_data[0])]
+            cur_metric_stats['argmax'] = metrics_data[1][np.argmax(metrics_data[0])]
+            cur_metric_stats['argmin'] = metrics_data[1][np.argmin(metrics_data[0])]
             cur_metric_stats['mean -5:'] = np.mean(metrics_data[0][-5:])
 
             metrics_statistics.append(cur_metric_stats)
