@@ -37,7 +37,7 @@ This writer could be used for logging neural networks metrics per epoch. <br>
     ```
 5. Make your group private.
 
-In the end you will have file credentials.yaml that you can use to log into this group.
+In the end you will have file credentials.yaml that you can use to write logs into this group.
 
 <b>For example</b> :
 ```
