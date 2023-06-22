@@ -8,7 +8,7 @@ pip install tg-bot-ml
 
 ## Package description.
 
-There are two python class to log metrics.
+There package contains two classes to log ML metrics.
 
 ###  <b>TGTableSummaryWriter</b>
 This writer is usefull for logging hyperparameters optimization or when you need log only numeric values. <br>
