@@ -6,7 +6,7 @@ This repository contains code for simple telegram bot for logging ML metrics.
 pip install tg-bot-ml
 ```
 
-## Usage
+## Package description.
 
 There are two python class to log metrics.
 
@@ -24,5 +24,25 @@ This writer could be used for logging neural networks metrics per epoch. <br>
 
 For more information see example : examples/tg_bot_nn_segmentation.py
 
-    
-    
+## Setup ml bot.
+
+1. Create telegram bot. Save token.
+2. Create public telegram group.
+3. Add your bot to this group. Make him an administrator.
+4. Run following code
+    ```
+    from tg_bot_ml.utils import create_credentials
+
+    create_credentials(BOT_TOKEN, PUBLIC_CHAT_NAME, './credentials.yaml')
+    ```
+5. Make your group private.
+
+In the end you will have file credentials.yaml that you can use to log into this group. For example :
+```
+from tg_bot_ml.table_bot import TGTableSummaryWriter
+
+if __name__ == '__main__':
+    tg_bot = TGTableSummaryWriter('../credentials.yaml', 'Catboost Hyperopt : Customer Churn')
+    tg_bot.add_record(lr=1e-3, n_estimators=100, MSE=1.3)
+    tg_bot.send(sort_by="MSE", ascending=False)
+```
