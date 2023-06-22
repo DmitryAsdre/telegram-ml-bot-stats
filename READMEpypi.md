@@ -1,11 +1,6 @@
 # Telegram bot ML stats.
 This repository contains code for simple telegram bot for logging ML metrics.
 
-## Installation
-```
-pip install tg-bot-ml
-```
-
 ## Package description.
 
 This package contains two classes to log ML metrics.
@@ -13,16 +8,16 @@ This package contains two classes to log ML metrics.
 ###  <b>TGTableSummaryWriter</b>
 This writer is usefull for logging hyperparameters optimization or when you need log only numeric values. <br>
 <b>Example:</b> <br>
-![Hyperopt](images/hyperopt_logging.png)
+![Hyperopt](https://github.com/DmitryAsdre/telegram-ml-bot-stats/blob/main/images/hyperopt_logging.png?raw=True)
 
-<b>For more information see example :</b> examples/hyperparams_gb.py
+<b>For more information see [TGTableSummaryWriter example](https://github.com/DmitryAsdre/telegram-ml-bot-stats/blob/main/examples/hyperparams_gb.py).</b>
 
 ### <b>TGImgSummaryWriter</b>
 This writer could be used for logging neural networks metrics per epoch. <br>
 <b>Example:</b> <br>
-![NeuralNetwork](images/vessel_segmentation_logging.png)
+![NeuralNetwork](https://github.com/DmitryAsdre/telegram-ml-bot-stats/blob/main/images/vessel_segmentation_logging.png?raw=True)
 
-<b>For more information see example : </b> examples/tg_bot_nn_segmentation.py
+<b>For more information see [TGImgSummaryWriter example](https://github.com/DmitryAsdre/telegram-ml-bot-stats/blob/main/examples/tg_bot_nn_segmentation.py).</b>
 
 ## Setup ml bot.
 

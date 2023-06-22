@@ -1,11 +1,18 @@
 
 from distutils.core import setup
+
+with open('./READMEpypi.md', 'r') as r:
+  readme_pypi = r.read() 
+
+
 setup(
   name = 'tg_bot_ml',
   packages = ['tg_bot_ml'],
-  version = '0.0.8',
+  version = '0.0.9',
   license='GPLv3',
   description = 'Simple telegram bot for logging ML statistics.',
+  long_description=readme_pypi,
+  long_description_content_type='text/markdown',
   author = 'Dmitry',
   author_email = 'michalych2014@yandex.ru',
   url = 'https://github.com/DmitryAsdre/telegram-ml-bot-stats.git', 
